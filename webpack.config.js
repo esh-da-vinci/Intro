@@ -8,6 +8,7 @@ module.exports = {
 	entry: {
 		main: [
 			'./assets/scss/main.scss',
+			'./assets/js/base.js'
 		]
 	},
 	output: {
