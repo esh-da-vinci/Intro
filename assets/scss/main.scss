@@ -5,7 +5,7 @@ html, body {
 	padding: 0;
 }
 
-.main {
+header {
 	position: relative;
 	overflow: hidden;
 	background-position: center center;
@@ -14,6 +14,13 @@ html, body {
 	-moz-background-size: cover;
 	background-size: cover;
 	height: 100%;
+}
+
+.main {
+	text-align: center;
+	padding: 10px;
+	background: lightgray;
+	height: 100vh;
 }
 
 .bg-video {
