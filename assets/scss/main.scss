@@ -28,6 +28,9 @@ header {
 
 .main {
 	padding: 40px 0 60px;
+	@media (max-width: 700px) {
+		padding: 15px;
+	}
 	background: grey;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
@@ -36,6 +39,24 @@ header {
 
 	h2 {
 		margin: 20px 0 40px;
+	}
+
+	@media (max-width: 700px) {
+  	    :not(.two).column {
+			div {
+				padding: 40px 0;
+			}
+			&:after {
+				content: " ";
+				display: block;
+				position: absolute;
+				height: 1px;
+				background: darkgray;
+				width: 90%;
+				left: 5%;
+				margin-top: 24px;
+			}
+		}
 	}
 
 	.contact {
@@ -48,6 +69,10 @@ header {
 	.copyright {
 		margin: 50px 0 0;
 		font-size: 12px;
+	}
+
+	.button {
+		margin-top: 2em;
 	}
 }
 
@@ -75,7 +100,7 @@ header {
 	height: 100%;
 	z-index: 1;
 	background: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 100%);
-	
+
 	@media(max-width:800px) {
 		background: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.6) 50%, rgba(0,0,0,.7) 100%);
 	}
@@ -89,6 +114,7 @@ header {
     z-index: 1;
     color: white;
     max-width: 800px;
+	text-align: center;
 
 	img {
 		display: block;
@@ -97,18 +123,15 @@ header {
 	}
 
 	h1 {
-		text-align: center;
 		font-size: 56px;
 	}
 
 	p {
-		text-align: center;
 		font-size: 18px;
 	}
 
 	.ui.button {
-		display: block;
-		margin: 40px auto;
+		margin: calc(40px - 1em) 0;
 	}
 
     @media(max-width: 800px) {
