@@ -1,3 +1,5 @@
+@import "~semantic-ui-css/semantic.min.css";
+
 html, body {
 	width: 100%;
 	height: 100%;
@@ -54,11 +56,15 @@ header {
 	height: 100%;
 	z-index: 1;
 	background: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 100%);
+	
+	@media(max-width:800px) {
+		background: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.6) 50%, rgba(0,0,0,.7) 100%);
+	}
 }
 
 .main-container {
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
@@ -80,4 +86,35 @@ header {
 		text-align: center;
 		font-size: 18px;
 	}
+
+	.ui.button {
+		display: block;
+		margin: 40px auto;
+	}
+
+    @media(max-width: 800px) {
+    	width: 80%;
+
+    	img {
+    		width: 120px;
+    	}
+		h1 {
+			font-size: 36px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+    }
+
+    @media(max-width:400px) {
+		p {
+			font-size: 14px;
+		}
+
+		img {
+			width: 80px;
+			margin: 10px auto 0;
+		}
+    }
 }
