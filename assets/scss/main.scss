@@ -1,7 +1,11 @@
-/**
- * Set default positioning as a fallback for if the plugin fails
- */
-.jquery-background-video-wrapper {
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.main {
 	position: relative;
 	overflow: hidden;
 	background-position: center center;
@@ -9,8 +13,10 @@
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	    	background-size: cover;
+	height: 100%;
 }
-.jquery-background-video {
+
+.bg-video {
 	position: absolute;
 	min-width: 100%;
 	min-height: 100%;
@@ -26,22 +32,10 @@
 	     -o-transform: translate(-50%,-50%);
 	    	transform: translate(-50%,-50%);
 }
-/**
- * Fade in videos
- * Note the .js class - so non js users still
- * see the video
- */
+
 .js .video-bg video {
 	opacity: 0;
 }
 .js .video-bg video.is-playing {
 	opacity: 1;
-}
-
-
-html, body, main {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
 }
