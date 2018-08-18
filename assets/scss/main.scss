@@ -9,9 +9,6 @@ html, body {
 	font-family: 'PT Sans', sans-serif;
 }
 
-h1, h2, h3 {
-	font-family: 'Arvo', sans-serif;
-}
 
 header {
 	position: relative;
@@ -23,13 +20,35 @@ header {
 	background-size: cover;
 	background-image: url('../img/poster.png');
 	height: 100%;
+
+	h1, h2 {
+	font-family: 'Arvo', sans-serif;
+}
 }
 
 .main {
+	padding: 40px 0 60px;
+	background: grey;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	color: white;
 	text-align: center;
-	padding: 10px;
-	background: lightgray;
-	height: 100vh;
+
+	h2 {
+		margin: 20px 0 40px;
+	}
+
+	.contact {
+		h2 {
+			margin: 10px 0;
+		}
+		margin-top: 70px;
+	}
+
+	.copyright {
+		margin: 50px 0 0;
+		font-size: 12px;
+	}
 }
 
 .bg-video {
